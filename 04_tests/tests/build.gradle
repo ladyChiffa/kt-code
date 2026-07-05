@@ -16,9 +16,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "17"
-}
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "17"
+kotlin {
+    jvmToolchain(17)
 }
